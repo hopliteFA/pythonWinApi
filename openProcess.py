@@ -6,11 +6,9 @@ import ctypes
 
 k_handle = ctypes.WinDLL("Kernel32.dll")
 
-#ask the user for the PID for the process they want a handle to
+#ask the user for the PID for the process they want a handle to.  Convert to int and hex.
 userPID = hex(int(input("Enter the PID you would like a handle to:  ")))
 print(userPID)
-
-#convert the PID from decimal to 
 
 #To assign the access rights, you would normally have to create a long list of hex with
 #all the values you want OR'd together.  However, there is a shortcut to give you blanket 

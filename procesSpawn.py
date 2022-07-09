@@ -79,3 +79,7 @@ if response > 0:
     print("Proc is running")
 else:
     print("Failed.  Error Code: {0}".format(k_handle.GetLastError()))
+
+
+#try to read info from the struct
+print(lpProcessInformation.dwProcessID)
